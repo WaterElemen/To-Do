@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>To-Do List</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js" defer></script>
+
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <h2 class="MainText">My To-Do List</h2>
+
+            <section class = "allTasks">
+
+                <section class="sectTasks"> <!-- Секция для тасков-->
+
+                </section>
+
+                <section class="sectExtendedTask"> <!-- Секция для доп настроек тасков-->
+                    
+                    <div class = 'extTask hide'>
+                        <div class = 'deadlineTask'>
+                            <input class = "deadlineTaskInput" placeholder = "Deadline">
+                        </div>
+
+                        <div class = 'taskNote'>
+                            <input class = "noteTaskInput" placeholder = "Your Notes to Task">
+                        </div>
+                    </div>
+
+                </section>
+
+            </section>
+
+            <button type ='button' class="buttonNewTask"> New Task </button> <!-- Кнопка добавления нового таска-->
+
+        </div>
+        
+        <!--Всплывающее окно ввода названия задачи-->
+        <div class="modalWindowCreateTask hide">
+
+            <input class = 'textInput' type = "text" placeholder = "Enter the name of task" maxlength="28">
+                
+            <button class = 'cancelCreateNewTask'> Cancel </button>
+            <button class = 'createNewTask'> Create task </button>
+
+        </div>
+
+    </body>
+
+</html>
